@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+width: 100%;
+height: 1000px;
+background: white;
+}
+.top{
+    width: 100%;
+    /* như float left nhưng căn chỉnh đều nhau mà k cần float nhiều lần */
+    display: flex;
+    position: fixed;
+}
+.logo{
+    width: 10%;
+    background: rgb(119, 116, 116);
+    /* float: left; */
+    /* note */
+}
+.logo h4{
+    margin-top: 10px;
+    margin-left: 15px;
+    color: aqua;
+}
+.logo h4:hover{
+    color: rgb(18, 175, 175);
+    transition: 700ms;
+}
+.menu{
+    width: 60%;
+    background: lightblue;
+    font-weight: 700;
+ 
+   
+    /* float: left; */
+     /* note */
+}
+.menu ul{
+    /* xóa dấu chấm"." ở menu */
+    list-style-type: none;
+    display: flex;
+    /* justify-content dùng để căn lề giữa hay trái phải */
+    justify-content: space-between;
+     /* note */
+
+}
+.menu ul li{
+    /* căn chỉnh cùng hàng */
+    display: inline-block;
+    padding: 10px 30px;
+    background: lightcoral;
+   
+     /* note */
+}
+.menu ul li:hover{
+background: rgb(204, 58, 58);
+}
+.menu ul li a{
+    text-decoration: none;
+     /* note */
+}
+.search{
+    width: 30%;
+    background: rosybrown;
+    /* float: left; */
+}
+.ipt-search{
+    margin-top: 8px;
+    float: right;
+    margin-right: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(18, 175, 175);
+    padding-left: 3px;
+}
+.main{
+width: 100%;
+display: flex;
+
+}
+.left{
+    margin-top: 38px;
+    width: 10%;
+    height: 500px;
+    background: lightcyan;
+}
+.left ul{
+    list-style-type: none;
+    justify-content: space-between;
+}
+.left ul li{
+    padding-top: 10px;
+    padding-left: 15px;
+    
+}
+.left ul li a{
+    text-decoration: none;
+    color: rgb(42, 39, 201);
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.left ul li :hover{
+    transition: 700ms;
+
+    background: lightcoral;
+}
+.content{
+    margin-top: 38px;
+    width: 90%;
+    height: 500px;
+    background: grey;
+ font-size: 50px;
+}
+
